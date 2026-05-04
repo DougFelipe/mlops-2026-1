@@ -1,0 +1,22 @@
+architecture: v0.1.5
+callback_patience: 100
+codes:
+- ping
+- how_are_you
+- who_are_you
+- ask_support
+- ask_content
+- response_refusal
+- normal_response
+dataset_name: confusion
+embedding_model: https://www.kaggle.com/models/google/universal-sentence-encoder/tensorFlow2/multilingual/2
+epochs: 1000
+l1_reg: 0.01
+l2_reg: 0.01
+learning_rate: 0.0001
+min_words: 1
+sent_dropout: 0.5 #### Teste parametros diferentes
+sent_hl_units: 64 #### Teste parametros diferentes
+stop_words_file: null
+task: train
+validation_split: 0.1

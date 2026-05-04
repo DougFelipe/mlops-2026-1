@@ -780,7 +780,7 @@ if __name__ == "__main__":
     # Instead of fire.Fire(IntentClassifier),
     # Define the functions to be used by Fire CLI so that 
     #  it's not cluttered with all the functions in the IntentClassifier class
-    def train(config: str, training_data: str, save_model: str, wandb_project: str = None):
+    def train(config: str, training_data: str, save_model: str = None, wandb_project: str = None):
         """
         Train the model with the given configuration and examples.
 
