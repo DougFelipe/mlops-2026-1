@@ -1,5 +1,4 @@
 wandb
-.env
 venv
 *.pyc
 __pycache__
