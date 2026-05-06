@@ -17,11 +17,13 @@ cd intent_classifier/
 python intent_classifier.py train \
     --config="confusion/confusion_config.yml" \
     --training_data="confusion/confusion_intents.yml" \
+    --save_model="confusion/confusion.keras" \
     --wandb_project="mlops-2026-1"
 
 python intent_classifier.py train \
     --config="clair_intents/clair_intents_config.yml" \
     --training_data="clair_intents/clair_intents.yml" \
+    --save_model="clair_intents/clair_intents.keras" \
     --wandb_project="mlops-2026-1"
 ```
 

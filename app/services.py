@@ -1,8 +1,6 @@
 from typing import Dict
 from datetime import datetime, timezone
 import logging
-import time
-import json
 
 from intent_classifier import IntentClassifier
 from db.engine import log_prediction
@@ -10,7 +8,7 @@ from db.schema import IntentPrediction, Response
 
 logger = logging.getLogger(__name__)
 
-# services.py
+
 def load_all_classifiers(models_to_load_str) -> dict:
     """
     Carrega todos os modelos de ML especificados na variável de ambiente
