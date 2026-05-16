@@ -4,8 +4,8 @@ codes:
 - certainty
 - confusion
 - neutral_statement
-dataset_name: confusion
-embedding_model: https://www.kaggle.com/models/google/universal-sentence-encoder/tensorFlow2/multilingual/2
+dataset_name: confusion_intents
+embedding_model: https://tfhub.dev/google/universal-sentence-encoder/4
 epochs: 1000
 l1_reg: 0.01
 l2_reg: 0.01

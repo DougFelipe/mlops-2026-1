@@ -59,9 +59,13 @@ from sklearn.metrics import classification_report, cohen_kappa_score
 
 import tensorflow as tf
 from tensorflow.keras import regularizers
-import tensorflow_text
 import tensorflow_hub as hub
 from tensorflow.keras.saving import register_keras_serializable
+
+try:
+    import tensorflow_text  # noqa: F401
+except ModuleNotFoundError:
+    tensorflow_text = None
 
 import wandb
 from wandb.integration.keras import WandbMetricsLogger, WandbEvalCallback # WandbModelCheckpoint
@@ -124,7 +128,7 @@ class Config:
     """Path to a text file containing stopwords, one per line."""
     min_words: int = 1
     """The minimum number of words required in an utterance for processing. Shorter inputs are padded."""
-    embedding_model: Union[str, List[str]] = 'https://www.kaggle.com/models/google/universal-sentence-encoder/tensorFlow2/multilingual/2'
+    embedding_model: Union[str, List[str]] = 'https://tfhub.dev/google/universal-sentence-encoder/4'
     """URL or path to the TensorFlow Hub embedding model."""
     sent_hl_units: Union[int, List[int]] = 32
     """Number of units in the hidden layer."""

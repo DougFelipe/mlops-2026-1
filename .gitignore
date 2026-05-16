@@ -1,8 +1,10 @@
 wandb
 venv
 .env
+.venv/
 *.pyc
 __pycache__
+intent_classifier/models/
 
 # Datasets
 # confusion_intents.yml

@@ -7,9 +7,9 @@ codes:
 - normal_response
 - ping
 - response_refusal
-- who_are_you 
+- who_are_you
 dataset_name: clair_intents
-embedding_model: https://www.kaggle.com/models/google/universal-sentence-encoder/tensorFlow2/multilingual/2
+embedding_model: https://tfhub.dev/google/universal-sentence-encoder/4
 epochs: 1000
 l1_reg: 0.01
 l2_reg: 0.01
