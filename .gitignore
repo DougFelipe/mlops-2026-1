@@ -14,3 +14,4 @@ intent_classifier/models/
 *.h5
 *.joblib
 *.pkl
+.archive
