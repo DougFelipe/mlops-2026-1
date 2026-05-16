@@ -18,6 +18,9 @@ jobs:
     # O tipo de máquina virtual para rodar o job
     runs-on: ubuntu-latest
 
+    # Aponta para o environment onde os secrets estão configurados
+    environment: MLOPS-LAB4
+
     # Segredos viram variáveis de ambiente que o docker-compose consome
     env:
       MONGO_URI: ${{ secrets.MONGO_URI }}
