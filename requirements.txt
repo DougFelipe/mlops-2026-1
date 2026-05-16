@@ -57,9 +57,12 @@ scikit-learn==1.7.2
 scipy==1.16.2
 seaborn==0.13.2
 sentry-sdk==2.42.1
+setuptools==81.0.0
 six==1.17.0
 smmap==5.0.2
 sniffio==1.3.1
+sphinx
+sphinx-rtd-theme
 starlette==0.48.0
 tensorboard==2.19.0
 tensorboard-data-server==0.7.2

@@ -1,5 +1,11 @@
 """
-uvicorn app.app:app --host 0.0.0.0 --port 8000 --log-level debug
+app.py
+======
+
+Módulo FastAPI responsável por servir o modelo de classificação de intenções.
+
+Comando para rodar:
+    uvicorn app.app:app --host 0.0.0.0 --port 8000 --log-level debug
 """
 
 
